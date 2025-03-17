@@ -18,7 +18,10 @@ int main(){
     unsigned long int populacao2;
     int pontos2;
     float area2, PIB2;
-
+    /* As variáveis do Estado foram deixadas como string pois não estavam se comportando normalmente quando deixadas
+    apenas em char (uma delas, geralmente a estado2, da segunda carta, sempre era ignorada, não sendo possível realizar
+    a entrada dos dados). Ao ser mudada pra string, as variáveis passaram a funcionar sem problemas e o programa fluiu
+    normalmente. */
     // Entrada dos dados da Carta 1
     printf(" ** Insira os dados da carta 1 ** \n");
 
